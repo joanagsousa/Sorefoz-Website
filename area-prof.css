@@ -1,0 +1,651 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 500;
+
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 
+    80px /*nav 1/2*/
+    7fr /*area profissional 2/3*/
+    7fr /*quero ser cliente  3/4*/
+    7fr /*solicitar acesso 4/5*/
+    50px /*titulo 5/6*/
+    7fr /*condiçoes 6/7*/
+    80px /*footer 7/8*/;
+    margin: 0;   
+    background-color: #003760;
+
+}
+
+
+.navbar-toggle{
+    display: none;
+}
+
+
+nav{
+    grid-column: 1/7;
+    grid-row: 1/2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 3%;
+}
+
+nav > ul a{
+    color:#003760; 
+	font-size: 15px;
+	text-decoration: none;
+	padding-right: 50px;
+	letter-spacing: 1px; 
+	font-weight: bold;
+    display: inline-block;
+    /*border-bottom: 4px solid #43ffff;
+    text-decoration-color: #43ffff;*/
+
+}
+
+nav > ul a:hover{
+    color: #43ffff;
+
+}
+
+nav ul li { 
+    display: inline-block; 
+}
+
+.logotype{
+    width: 140px;
+    display: inline-block;
+}
+
+
+.profissional{
+    text-align: left;
+    font-size: 26px;
+    font-weight: 600;
+    color: #003760;
+    margin-left: 60px;
+}
+
+.area{
+    grid-column: 1/7;
+    grid-row: 2/3; 
+    background-image: url('area-prof-24.jpg');
+    background-size: cover;
+}
+
+.quadrado{
+    border: 7px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    /*padding: 35px;*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
+    height: 650px;
+}
+
+.form1 > p, .form1 > label, .form1 > input, .form1 > button{
+    color: #003760;
+}
+
+.form1 > button{
+    width: 100px;
+}
+
+.acesso{
+    font-size: 30px;
+    font-weight: 600;
+    color: #003760;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+input[type=text], input[type=password], input[type=submit]{
+    width: 250px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.entrar{
+    background-color: #003760;
+    color: #fff !important;
+    width: 250px !important;
+    height: 35px !important;
+    border: none;
+    margin-top: 10px;
+}
+
+.support{
+    width: 250px;
+    color: #fff;
+}
+
+.quero1{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+
+.quero2{
+    grid-column: 4/7;
+    grid-row: 3/4;
+    margin-right: 40px;
+    margin-top: 75px;
+    
+}
+
+.quero1, .quero2{
+  
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff; 
+    line-height: 150%;
+    margin-left: 50px;
+    
+}
+
+.saber{
+    font-size: 20px;
+    color: #43ffff;
+    border-bottom: 3px solid #43ffff;
+    text-decoration: none;
+}
+
+h3{
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #43ffff;    
+}
+
+.botao{
+    display: none;
+}
+
+.solicitar1 > h3{
+    color: #003760;
+    line-height: 110%;
+}
+
+.solicitar1{
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+
+.solicitar2{
+    grid-column: 4/7;
+    grid-row: 4/5;
+    padding-right: 40px;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.solicitar1, .solicitar2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #003760;
+    line-height: 150%;
+    padding-left: 50px;    
+    background-color: #43ffff;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.form2{
+    text-align: center;
+    border: 7px solid #003760;
+    color: #003760;
+    font-size: 15px;
+    padding: 0px 60px 60px 60px;
+    height: 450px; 
+}
+
+.titulo{
+    grid-column: 1/7;
+    grid-row: 5/6;
+    padding: 0px 0px 0px 50px;
+}
+
+/*mesma rowwwww*/
+.cond1{
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.cond2{
+    grid-column: 3/5;
+    grid-row: 6/7;
+}
+
+.cond3{
+    grid-column: 5/7;
+    grid-row: 6/7;
+}
+
+.cond1, .cond2, .cond3{
+    color: #fff;
+    font-size: 16px;
+    padding: 60px 100px 0px 50px;
+    line-height: 140%;
+}
+
+.seta{
+    color: #43ffff;
+}
+
+
+
+.blue{
+    color: #43ffff;
+}
+
+
+/*
+.blue-link{
+    color: #003760;
+    border-bottom: 3px solid #003760;
+    text-decoration: none;
+    
+}
+*/
+
+
+footer{
+    background: #fff;
+    grid-column: 1/7;
+    grid-row: 7/8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3% 0 3%;
+    font-size: 16px;
+    color: #003760;
+}
+
+.social-media{
+    display: inline-block;
+}
+
+.social-media img{
+    margin-right: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 1490px){      /*BREAKINGGGGGGGGGGGGGGGGGGGGGGGGG POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOINT*/
+
+
+    .solicitar1 p {
+        width: 85%;
+    }
+
+    .solicitar1 p, .solicitar1 h3{
+        padding-left: 30px;    
+    }
+
+    .quero1 p, .quero1 h3{
+        padding-left: 40px;    
+    }
+
+    .quero1 p{
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 1092px){         /*BREAKINGGGGGGGGGGGGGGGGGGGGGGGGG POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOINT*/
+    body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 
+        70px /*logo e nav 1/2 */
+        3fr /*area profissional  2/3*/
+        500px /*quero1 ser cliente  3/4*/
+        0px /*quero2 ser cliente 4/5*/
+        500px /*solicitar1 acesso 5/6 */
+        600px /*solicitar2 acesso  6/7*/
+        100px /*titulo 7/8*/
+        3fr /*cond1  8/9*/
+        0px/*cond2  9/10*/
+        0px/*cond3  10/11*/
+        80px /*footer 11/12*/;
+        margin: 0;   
+        background-color: #003760;
+    }
+
+/* TOGGLE MENU HAMBURGER  ------------------------------------------------ */
+    
+nav > ul a{
+    font-size: 15px;
+    width: 200px;
+    height: 70px; 
+    display: block;
+    margin-top: 28%;
+    padding-right: 0%;
+    margin-left: 0;
+    color: #fff;
+
+}
+
+ul{
+    padding-left: 0px;
+}
+
+#lis{
+    height: 30px;  
+    font-size: 14px;  
+
+}
+
+.navbar-toggle{
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    cursor: pointer; 
+    font-size: 24px;
+}
+
+.main-nav{
+    display: none;
+}
+
+.active {
+    display: block;
+    
+}
+
+.esconder{
+    display: none;
+}
+
+.zeta-index{
+    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 0 0 0 0;
+    display: block;
+    background-color: #003760;
+    height: 100vh;
+}
+
+
+.classRows{
+    grid-template-rows: 
+        650px /*nav 1/2  */;
+
+}
+
+.list{
+    font-size: 40px; 
+}
+
+
+.saber{
+    font-size: 20px;
+    color: #43ffff;
+    border-bottom: 3px solid #43ffff;
+    text-decoration: none;
+}
+
+/* TOGGLE MENU HAMBURGER  ---------- */
+
+    .quero1{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        /*display: flex;
+        flex-direction: column;*/
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+
+    }
+
+    .quero2{
+    display: none;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 40px;
+    width: 65%;
+    }
+
+
+    .botao{
+        display: block;
+        font-size: 16px;
+        color: #43ffff;
+        border: none;
+        border-bottom: 3px solid #43ffff;
+        text-decoration: none;
+        background: transparent; 
+        padding: 0;
+    }
+
+    .quero1 .botao{
+        margin-left: 40px;
+        padding: 0px;
+    }
+
+    .solicitar1{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .solicitar2{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    
+
+
+    .form2{
+        width: 80%;
+        padding: 0px;
+    }
+
+
+
+    /*h3{
+        margin-top: 0px;
+        padding-top: 0px;
+    }*/
+
+    .solicitar1 > h3{
+        padding-top: 25px;
+    }
+
+    .titulo{
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+
+    .cond1{
+        grid-column: 1/3;
+        grid-row: 8/9;
+    }
+
+    .cond2, .cond3{
+        display: none;
+        padding: 5px 100px 0px 40px;
+    }
+
+    .cond2{
+        grid-column: 1/3;
+        grid-row: 9/10;
+
+    }
+
+    .cond3{
+        grid-column: 1/3;
+        grid-row: 10/11;
+
+    }
+
+
+    footer{
+        grid-column: 1/3;
+        grid-row: 11/12;
+    }
+
+ }   
+
+
+
+
+ @media (max-width: 870px){      /*BREAKINGGGGGGGGGGGGGGG POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOINT*/
+
+
+    .quero1 p, .solicitar1 p{
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .solicitar1 p, .solicitar1 h3{
+        padding-left: 40px;
+    }
+
+ }
+
+        @media (max-width: 638px){      /*BREAKINGGGGGGGGGGGGGGG POOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOINT*/
+            body{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 
+                50px /*logo e nav 1/2 */
+                500px /*area profissional  2/3*/
+                500px /*quero1 ser cliente  3/4*/
+                0px  /*quero2 ser cliente 4/5*/
+                700px /*solicitar1 acesso 5/6 */
+                500px  /*solicitar2 acesso  6/7*/
+                110px /*titulo 7/8*/
+                1fr /*cond1  8/9*/
+                 /*cond3  9/10*/
+                 /*cond3  10/11*/
+                80px  /*footer 11/12*/;
+                margin: 0;   
+                background-color: #003760;
+                }
+    
+                .logotype{
+                    width: 100px;
+                }
+
+                .navbar-toggle{
+                    top: 14px;
+                }
+
+                .navbar-toggle img{
+                    width: 25px;
+                }
+    
+                .profissional{
+                    margin-left: 10px;
+                    font-size: 20px;
+                    text-align: center;
+                    
+                }
+                .acesso{
+                    font-size: 16px;
+                }
+
+                .support{
+                    font-size: 12px;
+                }
+
+                .quadrado{
+                    border: 7px solid #fff;
+                    padding: 0px;
+                    margin: 0px;
+                    height: 400px;
+                }
+            
+                input[type=text], input[type=password], input[type=submit]{
+                    width: 200px;
+                    height: 35px;
+                }
+                
+                .entrar{
+                    width: 200px !important;
+                }
+            
+                h3{
+                    font-size: 25px;
+                    margin-left: 0px;
+                    padding-left: 0px;
+                }  
+            
+                .quero1{
+                    margin-left: 0px;
+                    padding-left: 0px;
+                    font-size: 12px;
+                    
+                }
+
+                .quero1 p{
+                    font-size: 16px;
+                }
+
+                .quero2{
+                    font-size: 16px;
+                    
+                }
+            
+                .titulo{
+                    font-size: 25px;
+                    padding: 0 40px 0 40px;
+                }
+            
+                .solicitar1{
+                    margin: 0px;
+                    padding-left: 0px;
+                }
+
+                .solicitar1 p{
+                    font-size: 16px;
+                }
+
+            
+                .cond1, .cond2, .cond3{
+                    padding: 5px 100px 0px 40px;
+                    font-size: 14px;
+                }
+
+                footer{
+                    font-size: 9px;
+                }
+            }
+            

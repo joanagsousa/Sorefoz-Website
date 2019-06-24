@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SOREFOZ - Área Profissional</title>
+    <link rel="stylesheet" href="area-prof.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+
+<body id="grid">
+
+    <!-----<div class="logo">
+        <a href="#"><img src="logo-03.jpg" class="logotype" /></a>
+    </div>--->
+
+    <nav>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <img src="https://svgshare.com/i/C0b.svg" />
+        </span>
+
+        <a href="#"><img src="logo-03.jpg" class="logotype" id="logotype" /></a>
+
+        <ul class="main-nav" id="js-menu">
+            <li><a class="home" id="lis" href="sorefozcssgridcopy.html">HOME</a></li>
+            <li><a class="empresa" id="lis" href="sorefozcssgridcopy.html#quem-somos">EMPRESA</a></li>
+            <li><a class="lojas-associadas" id="lis" href="sorefozcssgridcopy.html#lojas-associadas">LOJAS
+                    ASSOCIADAS</a></li>
+            <li><a class="contactos" id="lis" href="sorefozcssgridcopy.html#gerais">CONTACTOS</a></li>
+            <li><a class="area-profissional" id="lis" href="#">ÁREA PROFISSIONAL</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="area">
+        <p class="profissional">ÁREA PROFISSIONAL</p>
+
+        <div class="quadrado">
+            <form class="form1">
+                <p class="acesso">acesso online</p><br>
+                <label for="user">utilizador</label><br>
+                <input type="text" name="user" required><br>
+                <br>
+                <label for="password">chave de acesso</label><br>
+                <input type="password" name="password" required><br>
+                <br>
+                <label for="second-password">chave de acesso secundária</label><br>
+                <input type="password" name="second-password" required><br>
+                <br>
+                <button type="submit" class="entrar">ENTRAR</button><br>
+                <br>
+                <p class="support">Caso sinta dificuldade de acesso
+                    à Extranet Sorefoz, por favor contacte
+                    a Área de B2B da Sorefoz</p>
+            </form>
+
+            <!---<a href="#" class="arrow"></a>--->
+        </div>
+    </div>
+
+    <div class="quero1">
+        <h3>quero ser cliente</h3>
+        <p>Para abrir Conta de Cliente Sorefoz</p>
+        <p>A SOREFOZ é uma empresa de distribuição de produtos relacionados com electrodomésticos,
+            imagem e som, climatização, comunicações, electrónica e informática de usos domésticos,
+            que só vende a agentes económicos profissionais destes sectores. Assim, para se tornar
+            nosso cliente é necessário que preencha a Ficha de Cliente da Sorefoz, anexando os documentos
+            solicitados.</p>
+        <button onclick="myFunc()" class="saber botao">mostrar mais</button>
+    </div>
+
+    <div class="quero2" id="mostrar">
+        <p>Os documentos a enviar em anexo à Ficha de Cliente são:</p>
+
+        <p>Se for uma Sociedade Comercial: deve anexar obrigatóriamente cópias do Cartão de Contribuinte da
+            Empresa, da Certidão do Registo Comercial, ou em alternativa o Código da Certidão Permanente, e
+            dos Bilhetes de Identidade e dos Cartões de Contribuinte dos Sócios.</p>
+
+        <p>Se for um Empresário em Nome Individual:</p>
+        <p>Deve anexar obrigatóriamente cópias do Cartão de Contribuinte, da Declaração de Início de Actividade e do
+            Bilhete de Identidade.</p>
+        <br>
+    </div>
+
+    <div class="solicitar1">
+        <h3>solicitar acesso ao programa B2B</h3>
+        <p>O acesso à extranet da Sorefoz é reservado a Parceiros de Negócio, sendo uma área própria e condicionada,
+            por conter informações exclusivamente direccionadas às entidades que lhe acedem. Se já é nosso Cliente e
+            pretende solicitar o seu acesso ao Programa B2B, basta preencher e enviar-nos as informações abaixo
+            indicadas, aceitando os Termos e Condições para Utilização do Programa B2B.
+            <br>
+            Após a análise do seu pedido, ser-lhe-á enviado um e-mail de resposta que conterá os requisitos
+            necessários e a
+            solicitação do agendamento da instalação do Programa B2B.</p>
+
+    </div>
+
+    <div class="solicitar2">
+        <form class="form2">
+            <p class="acesso">solicitar acesso</p><br>
+            <label for="user">código cliente</label><br>
+            <input type="text" name="user" required><br>
+            <br>
+            <label for="text">chave de acesso</label><br>
+            <input type="text" name="fiscal-number" required><br>
+            <br>
+            <button type="submit" class="entrar">VALIDAR</button><br>
+        </form>
+    </div>
+
+
+    <h3 class="titulo">condições de comercialização dos clientes B2B</h3>
+
+    <div class="cond1">
+        <h4 class="blue">PREÇOS</h4>
+        <p>Os preços constantes na tabela SOREFOZ são preços de revenda, válidos exclusivamente para Profissionais,
+            não incluem IVA e podem ser alterados sem aviso prévio.
+            <br>
+            Aos preços apresentados serão aplicados os regimes de descontos financeiros ou comerciais em vigor.
+        </p>
+        <br>
+        <br>
+        <h4 class="blue">CONDIÇÕES DE PAGAMENTO</h4>
+        <p>Após avaliação do Departamento Financeiro e atribuição de um limite de crédito pela Seguradora de Crédito,
+            poderão ser aprovadas condições de pagamento a crédito.
+            <br>
+            No entanto, todas as compras efectuadas terão de ser pagas por Transferência Bancária ou por Cheque datado
+            para
+            a data de vencimento da factura respectiva, contra a entrega da mercadoria.
+            <br>
+            As condições de pagamento podem ser alteradas sem qualquer aviso prévio.</p>
+        <button id="show" class="saber botao">mais sobre encomendas</button>
+
+    </div>
+
+    <div class="cond2" id="cond2">
+        <h4 class="blue">COLOCAÇÃO DE ENCOMENDAS</h4>
+        <p>Os Clientes B2B podem colocar as suas encomendas:
+            <br><br>
+            <span class="seta">&#8614; &nbsp;</span>On-line, através do Programa B2B, apenas para Clientes Sorefoz com
+            acesso autorizado;
+            <br><br>
+            <span class="seta">&#8614; &nbsp;</span>Por E-Mail, para b2b@sorefoz.pt;
+            <br><br>
+            <span class="seta">&#8614; &nbsp;</span>Por Fax, para o número 233 401 956.
+        </p>
+        <br>
+        <br>
+        <h4 class="blue">ENTREGAS</h4>
+        <p>As entregas de mercadorias serão efectuadas nos dias úteis, de segunda a sexta-feira,
+            para o território de Portugal Continental, pelos transportes da SOREFOZ ou através do recurso
+            a entidades transportadoras externas.
+        </p>
+    </div>
+
+    <div class="cond3" id="cond3">
+        <p>Cada encomenda colocada com um valor inferior a 150 euros terá um encargo adicional de 6 euros para fazer
+            face aos custos de transporte da mercadoria. Se esta encomenda der origem a mais que uma factura, este valor
+            será cobrado na primeira factura emitida.
+            <br><br>
+            Para as Regiões Autónomas da Madeira e dos Açores, as entregas serão analisadas caso a caso.
+            <br><br>
+            Os nossos Serviços de Entrega e Transportes estão preparados para:
+            <br><br>
+            <span class="seta">&#8614; &nbsp;</span>A possibilidade de entregas diárias no Ponto de Venda;
+            <br><br>
+            <span class="seta">&#8614; &nbsp;</span>Responder à necessidade de entregas rápidas (em 24 horas / 48 horas
+            sobre a data da encomenda da mercadoria para os Clientes do Continente, conforme a sua localização).
+        </p>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="social-14.svg"></a>
+            <a href="#"><img src="social-15.svg"></a>
+            <a href="#"><img src="social-16.svg"></a>
+            <a href="#"><img src="social-17.svg"></a>
+        </div>
+
+        <p>Copyright @ Sorefoz 2019</p>
+
+    </footer>
+
+
+    <!----<script>
+        function myFunction1() {
+            var x = document.getElementById("mostrar");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction2() {
+            var x = document.getElementById("mostrar2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>---->
+
+    <!-----<script>
+    window.addEventListener("click", function(){
+        let button = document.getElementById("show");
+        let elem = document.getElementById("grid");
+        elem.style.gridTemplateRows = "70px repeat(5, 1fr) 80px repeat(3, 1fr) 80px";
+    });
+    </script>
+    --->
+
+    <script>
+
+function myFunc() {
+  var x = document.getElementById("mostrar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    document.getElementsByTagName("BODY")[0].style.gridTemplateRows = "80px 1fr 500px 600px 700px 500px 110px 800px 600px 700px 80px";
+  }
+}
+
+
+        let button = document.getElementById("show");
+        button.onclick = myFunction;
+
+        function myFunction() {
+            if (window.innerWidth <= 1092) {
+                document.getElementById("cond2").style.display = 'block';
+                document.getElementById("cond3").style.display = 'block';
+                document.getElementsByTagName("BODY")[0].style.gridTemplateRows = "80px 1fr 500px 0px 700px 500px 110px 800px 600px 700px 80px";
+            } else if (window.innerWidth >= 1092) {
+                document.getElementsByTagName("BODY")[0].style.gridTemplateRows = "80px 7fr 7fr 7fr 60px 7fr 80px";
+        }
+        }
+
+/*TOOGLE HAMBUGER*/
+        let mainNav = document.getElementById('js-menu');
+
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        let nav = document.getElementsByTagName("NAV")[0];
+
+        /*let litem = document.querySelectorAll("li");*/
+
+        let logo = document.getElementById('logotype');
+
+        navBarToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+            document.getElementsByTagName("BODY")[0].classList.toggle('classRows');
+            nav.classList.toggle('zeta-index');
+            /*litem.classList.toggle('list');*/
+            logo.classList.toggle('esconder');
+
+        });
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>
